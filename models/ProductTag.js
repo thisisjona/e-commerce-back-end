@@ -19,6 +19,13 @@ ProductTag.init(
         model: 'product',
         key: 'id'
       }
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'tag',
+        key: 'id'
+      }
     }
   },
   {
@@ -29,5 +36,6 @@ ProductTag.init(
     modelName: 'product_tag',
   }
 );
+
 
 module.exports = ProductTag;
